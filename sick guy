@@ -1,0 +1,150 @@
+<html>
+<body>
+
+<canvas id="myCanvas" width="1200" height="590"
+style="border:1px solid #4a4a4b;">
+
+</canvas>
+
+<script>
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+
+
+
+//black circle
+ctx.beginPath();
+ctx.fillStyle="#000000"
+ctx.arc(600,295,200,0,2*Math.PI)
+ctx.stroke()
+ctx.fill();
+ctx.closePath();
+
+//left eye
+ctx.beginPath();
+ctx.fillStyle="#ffffff"
+ctx.arc(500,260,30,0,2*Math.PI)
+ctx.stroke()
+ctx.fill();
+ctx.closePath();
+//left eyebrow
+ctx.beginPath();
+ctx.fillStyle="#ffffff"
+ctx.rect(470,210,60,7,2*Math.PI)
+ctx.stroke()
+ctx.fill();
+ctx.closePath();
+//right eyebrow
+ctx.beginPath();
+ctx.fillStyle="#ffffff"
+ctx.rect(670,210,60,7,2*Math.PI)
+ctx.stroke()
+ctx.fill();
+ctx.closePath();
+//nose
+ctx.beginPath();
+ctx.fillStyle="#ffffff"
+ctx.rect(590,280,20,50,2*Math.PI)
+ctx.stroke()
+ctx.fill();
+ctx.closePath();
+//mouth
+ctx.beginPath();
+ctx.fillStyle="#ffffff"
+ctx.rect(550,390,100,10,2*Math.PI)
+ctx.stroke()
+ctx.fill();
+ctx.closePath();
+//right eye
+ctx.beginPath();
+ctx.fillStyle="#ffffff"
+ctx.arc(700,260,30,0,2*Math.PI)
+ctx.stroke()
+ctx.fill();
+ctx.closePath();
+//left pupil
+ctx.beginPath();
+ctx.fillStyle="#000000"
+ctx.arc(500,270,15,0,2*Math.PI)
+ctx.stroke()
+ctx.fill();
+ctx.closePath();
+//right pupil
+ctx.beginPath();
+ctx.fillStyle="#000000"
+ctx.arc(700,270,15,0,2*Math.PI)
+ctx.stroke()
+ctx.fill();
+ctx.closePath();
+//mouse
+
+myCanvas.onclick=changeColor;
+function changeColor(){
+    ctx.beginPath();
+ctx.fillStyle="#14a10a"
+ctx.arc(600,295,200,0,2*Math.PI)
+ctx.stroke()
+ctx.fill();
+ctx.closePath();
+//left eye
+ctx.beginPath();
+ctx.fillStyle="#ffffff"
+ctx.arc(500,260,30,0,2*Math.PI)
+ctx.stroke()
+ctx.fill();
+ctx.closePath();
+//left eyebrow
+ctx.beginPath();
+ctx.fillStyle="#ffffff"
+ctx.rect(470,190,60,7,2*Math.PI)
+ctx.stroke()
+ctx.fill();
+ctx.closePath();
+//right eyebrow
+ctx.beginPath();
+ctx.fillStyle="#ffffff"
+ctx.rect(670,190,60,7,2*Math.PI)
+ctx.stroke()
+ctx.fill();
+ctx.closePath();
+//nose
+ctx.beginPath();
+ctx.fillStyle="#ffffff"
+ctx.rect(590,280,20,50,2*Math.PI)
+ctx.stroke()
+ctx.fill();
+ctx.closePath();
+//mouth
+ctx.beginPath();
+ctx.fillStyle="#ffffff"
+ctx.rect(550,410,60,10,2*Math.PI)
+ctx.stroke()
+ctx.fill();
+ctx.closePath();
+//right eye
+ctx.beginPath();
+ctx.fillStyle="#ffffff"
+ctx.arc(700,260,30,0,2*Math.PI)
+ctx.stroke()
+ctx.fill();
+ctx.closePath();
+//left pupil
+ctx.beginPath();
+ctx.fillStyle="#000000"
+ctx.arc(500,260,5,0,2*Math.PI)
+ctx.stroke()
+ctx.fill();
+ctx.closePath();
+//right pupil
+ctx.beginPath();
+ctx.fillStyle="#000000"
+ctx.arc(700,260,5,0,2*Math.PI)
+ctx.stroke()
+ctx.fill();
+ctx.closePath();
+} 
+
+</script>
+
+</body>
+</html>
