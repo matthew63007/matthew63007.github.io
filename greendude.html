@@ -1,8 +1,8 @@
 <html>
 <body>
 
-<canvas id="myCanvas" width="1200" height="590"
-style="border:1px solid #4a4a4b;">
+<canvas id="myCanvas" width="1200" height="572"
+style="border:10px solid #4a4a4b;">
 
 </canvas>
 
@@ -10,139 +10,96 @@ style="border:1px solid #4a4a4b;">
 var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
 
+var gamevalue = 0
+var r = 0;
+var g = 0;
+var b = 255;
 
 
-//black circle
+function changegamevalue(){
+    gamevalue += 1
+}
+myCanvas.onClick = changegamevalue;
+
+while (gamevalue = '1') {
+    b -= 2;
+}
+
 ctx.beginPath();
-ctx.fillStyle="#000000"
-ctx.arc(600,295,200,0,2*Math.PI)
+ctx.fillStyle= 'rgb('+r+', '+g+', '+b+')'
+ctx.rect(0,0,1200,590,2*Math.PI)
 ctx.stroke()
 ctx.fill();
 ctx.closePath();
 
-//left eye
+//hills
 ctx.beginPath();
-ctx.fillStyle="#ffffff"
-ctx.arc(500,260,30,0,2*Math.PI)
+ctx.fillStyle="#18a616"
+ctx.arc(180,630,200,0,2*Math.PI)
 ctx.stroke()
 ctx.fill();
 ctx.closePath();
-//left eyebrow
 ctx.beginPath();
-ctx.fillStyle="#ffffff"
-ctx.rect(470,210,60,7,2*Math.PI)
+ctx.fillStyle="#18a616"
+ctx.arc(780,630,200,0,2*Math.PI)
 ctx.stroke()
 ctx.fill();
 ctx.closePath();
-//right eyebrow
 ctx.beginPath();
-ctx.fillStyle="#ffffff"
-ctx.rect(670,210,60,7,2*Math.PI)
+ctx.fillStyle="#18a616"
+ctx.arc(480,630,200,0,2*Math.PI)
 ctx.stroke()
 ctx.fill();
 ctx.closePath();
-//nose
 ctx.beginPath();
-ctx.fillStyle="#ffffff"
-ctx.rect(590,280,20,50,2*Math.PI)
+ctx.fillStyle="#18a616"
+ctx.arc(1080,630,200,0,2*Math.PI)
 ctx.stroke()
 ctx.fill();
 ctx.closePath();
-//mouth
-ctx.beginPath();
-ctx.fillStyle="#ffffff"
-ctx.rect(550,390,100,10,2*Math.PI)
-ctx.stroke()
-ctx.fill();
-ctx.closePath();
-//right eye
-ctx.beginPath();
-ctx.fillStyle="#ffffff"
-ctx.arc(700,260,30,0,2*Math.PI)
-ctx.stroke()
-ctx.fill();
-ctx.closePath();
-//left pupil
-ctx.beginPath();
-ctx.fillStyle="#000000"
-ctx.arc(500,270,15,0,2*Math.PI)
-ctx.stroke()
-ctx.fill();
-ctx.closePath();
-//right pupil
-ctx.beginPath();
-ctx.fillStyle="#000000"
-ctx.arc(700,270,15,0,2*Math.PI)
-ctx.stroke()
-ctx.fill();
-ctx.closePath();
-//mouse
 
-myCanvas.onclick=changeColor;
-function changeColor(){
-    ctx.beginPath();
-ctx.fillStyle="#14a10a"
-ctx.arc(600,295,200,0,2*Math.PI)
-ctx.stroke()
-ctx.fill();
-ctx.closePath();
-//left eye
-ctx.beginPath();
-ctx.fillStyle="#ffffff"
-ctx.arc(500,260,30,0,2*Math.PI)
-ctx.stroke()
-ctx.fill();
-ctx.closePath();
-//left eyebrow
-ctx.beginPath();
-ctx.fillStyle="#ffffff"
-ctx.rect(470,190,60,7,2*Math.PI)
-ctx.stroke()
-ctx.fill();
-ctx.closePath();
-//right eyebrow
-ctx.beginPath();
-ctx.fillStyle="#ffffff"
-ctx.rect(670,190,60,7,2*Math.PI)
-ctx.stroke()
-ctx.fill();
-ctx.closePath();
-//nose
-ctx.beginPath();
-ctx.fillStyle="#ffffff"
-ctx.rect(590,280,20,50,2*Math.PI)
-ctx.stroke()
-ctx.fill();
-ctx.closePath();
-//mouth
-ctx.beginPath();
-ctx.fillStyle="#ffffff"
-ctx.rect(550,410,60,10,2*Math.PI)
-ctx.stroke()
-ctx.fill();
-ctx.closePath();
-//right eye
-ctx.beginPath();
-ctx.fillStyle="#ffffff"
-ctx.arc(700,260,30,0,2*Math.PI)
-ctx.stroke()
-ctx.fill();
-ctx.closePath();
-//left pupil
+
+
+//1st stage engines
+//engines 
 ctx.beginPath();
 ctx.fillStyle="#000000"
-ctx.arc(500,260,5,0,2*Math.PI)
-ctx.stroke()
+ctx.ellipse(600, 545, 11, 19, Math.PI / 1000, 3.13, 2 * Math.PI);
+ctx.stroke();
 ctx.fill();
-ctx.closePath();
-//right pupil
+
 ctx.beginPath();
 ctx.fillStyle="#000000"
-ctx.arc(700,260,5,0,2*Math.PI)
+ctx.ellipse(630, 545, 11, 19, Math.PI / 1000, 3.13, 2 * Math.PI);
+ctx.stroke();
+ctx.fill();
+
+ctx.beginPath();
+ctx.fillStyle="#000000"
+ctx.ellipse(660, 545, 11, 19, Math.PI / 1000, 3.13, 2 * Math.PI);
+ctx.stroke();
+ctx.fill();
+
+
+
+
+
+
+
+//1st stage
+ctx.beginPath();
+ctx.fillStyle= "rgb(255, 255, 255)"
+ctx.rect(585,455,90,75,2*Math.PI)
 ctx.stroke()
 ctx.fill();
-ctx.closePath();
-} 
+
+
+
+
+
+
+
+
 
 </script>
 
