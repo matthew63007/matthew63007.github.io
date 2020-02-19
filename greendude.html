@@ -10,23 +10,10 @@ style="border:10px solid #4a4a4b;">
 var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
 
-var gamevalue = 0
-var r = 0;
-var g = 0;
-var b = 255;
 
-
-function changegamevalue(){
-    gamevalue += 1
-}
-myCanvas.onClick = changegamevalue;
-
-while (gamevalue = '1') {
-    b -= 2;
-}
 
 ctx.beginPath();
-ctx.fillStyle= 'rgb('+r+', '+g+', '+b+')'
+ctx.fillStyle= rgb(0, 195, 255)
 ctx.rect(0,0,1200,590,2*Math.PI)
 ctx.stroke()
 ctx.fill();
